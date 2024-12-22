@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  lein:
+    build: .
+    image: lein-image:latest
+    container_name: lein-container
+    volumes:
+      - .:/app
+    working_dir: /app
