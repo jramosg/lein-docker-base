@@ -7,7 +7,7 @@ ENV LEIN_INSTALL_DIR /usr/local/bin
 
 # Install dependencies, including libsodium
 RUN apt-get update && apt-get install -y \
-    libsodium-dev \
+    libsodium-dev poppler-utils\
     curl \
     && curl -o ${LEIN_INSTALL_DIR}/lein \
         https://raw.githubusercontent.com/technomancy/leiningen/${LEIN_VERSION}/bin/lein \

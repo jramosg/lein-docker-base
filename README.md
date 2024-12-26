@@ -8,7 +8,7 @@ The project includes the following files:
 1. **Dockerfile**
    - Based on the official OpenJDK 21 image (`eclipse-temurin:21-jdk`).
    - Installs Leiningen (`stable` version).
-   - Includes `libsodium` for additional dependencies.
+   - Includes `libsodium` and `poppler-utils` for additional dependencies.
    - Uses `/app` as the working directory.
 
 2. **docker-compose.yml**
